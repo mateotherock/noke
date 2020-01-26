@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import contacts from "./users.js";
+import ContactDetail from "./ContactDetail/ContactDetail";
 
 function App() {
+  const [contact, setContact] = useState(contacts.People[0]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contact-list-detail">
+      <div className="contact-list">
+        {contacts.People.map((c, i) =>
+          <div key={i} className={(c === contact) ? "selected-list-item contact-list-item" : "contact-list-item"} onClick={() => setContact(c)}>
+            <div className="image-container">
+              <img className="contact-list-item-pic" src={c.Picture} alt="Contact Headshot"></img>
+            </div>
+            <div>
+              <div className="contact-list-item-name">{c.Name}</div>
+              <div className="contact-list-item-title">{c.Title}</div>
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="contact-detail">
+        <ContactDetail contactToDisplay={contact}></ContactDetail>
+      </div>
     </div>
   );
 }

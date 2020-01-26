@@ -1,0 +1,51 @@
+.contact-split {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-picture-container {
+    flex: .4;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-picture {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.contact-info {
+    flex: .6;
+}
+
+.contact-line-name {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.contact-line-title {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    padding-bottom: 15px;
+    border-bottom: solid 1px lightgrey;
+}
+
+.contact-icon {
+    padding-right: 20px;
+}
+
+.contact-icon {
+    height: 35px;
+    width: 35px;
+    fill: deepskyblue;
+}
+
+.contact-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+}
