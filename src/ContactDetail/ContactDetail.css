@@ -1,6 +1,7 @@
 .contact-split {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .contact-picture-container {
@@ -17,17 +18,18 @@
 }
 
 .contact-info {
+    padding-left: 20px;
     flex: .6;
 }
 
 .contact-line-name {
     margin-top: 20px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 
 .contact-line-title {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     padding-bottom: 15px;
     border-bottom: solid 1px lightgrey;
@@ -48,6 +50,7 @@
     flex-direction: row;
     align-items: center;
     padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (min-width: 768px) {

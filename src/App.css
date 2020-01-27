@@ -1,12 +1,19 @@
+.contact-list-detail {
+  width: 100vw;
+  height: 100vh;
+}
+
 .contact-list {
   padding: 20px;
 }
 
 .contact-detail {
+  height: fit-content;
   margin: 20px;
   padding: 20px;
   border-radius: 5px;
   border: 1px solid lightgrey;
+  box-shadow: 0 6px 17px 0 rgba(0, 7, 32, 0.07);
 }
 
 .contact-list-item {
@@ -14,15 +21,19 @@
   padding: 20px;
   display: flex;
   flex-direction: row;
+  border: 1px solid white;
+}
+
+.contact-list-item:first-of-type {
+  border-top: 1px solid lightgrey;
+}
+
+.contact-list-item {
   border-bottom: 1px solid lightgrey;
 }
 
 .selected-list-item {
   background-color: whitesmoke;
-}
-
-.contact-list-item:first-of-type {
-  border-top: 1px solid lightgrey;
 }
 
 .image-container {
@@ -36,12 +47,17 @@
 }
 
 .contact-list-item-name {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact-list-item-title {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
+}
+
+.contact-list-item:hover {
+  border: 1px solid #00BFFF;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 768px) {
